@@ -16,9 +16,7 @@ function App() {
         <NavMenu />
         <Cart />
         <Routes>
-          <Route path="/products/:handle">
-            <ProductPage />
-          </Route>
+          <Route exact path="/products/:handle" element={<ProductPage />} />
           <Route exact path="/" element={<HomePage />} />
         </Routes>
         <Footer />
